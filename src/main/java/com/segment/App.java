@@ -18,7 +18,7 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         SegmentTracker.initialize(SEGMENT_WRITE_KEY);
 
-        // Make 5 per calls customer to different endpoints. You should only see events from
+        // Make 5 calls per customer to different endpoints. You should only see events from
         // customer-2 and customer-3 on your segment dashboard since only the new feature endpoint
         // is being tracked (annotated with @Tracked).
         IntStream.range(0, 5).forEach(__ -> {
