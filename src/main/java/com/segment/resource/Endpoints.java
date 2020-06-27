@@ -12,23 +12,23 @@ import com.segment.domain.model.Context;
 public class Endpoints {
 
     /**
-     * Endpoint corresponding to newly introduced feature in Beta phase.
+     * Endpoint corresponding to newly introduced feature in Beta phase
      * We want to track the activity on this endpoint to evaluate the new feature
-     * @param context
-     * @param event
+     * @param context Customer context
+     * @param event Event being triggered
      */
     @Tracked
     public static void newFeature(Context context, String event) {
-        System.out.println(String.format("[TRACKED ENDPOINT] Incoming request for %s: %s", event, context));
+        System.out.println(String.format("[TRACKED ENDPOINT] Incoming request to %s: %s", event, context));
     }
 
     /**
      * Endpoint corresponding to an existing feature
      * We don't care about the activity on this endpoint since it's already stable and being used by multiple customers
-     * @param context
-     * @param event
+     * @param context Customer context
+     * @param event Event being triggered
      */
     public static void existingFeature(Context context, String event) {
-        System.out.println(String.format("[UNTRACKED ENDPOINT] Incoming request for %s: %s", event, context));
+        System.out.println(String.format("[UNTRACKED ENDPOINT] Incoming request to %s: %s", event, context));
     }
 }

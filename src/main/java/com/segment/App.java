@@ -5,6 +5,9 @@ import java.util.stream.IntStream;
 import com.segment.domain.model.Context;
 import com.segment.domain.SegmentTracker;
 import com.segment.resource.Endpoints;
+import com.segment.utils.PropUtils;
+
+import static com.segment.utils.AppConstants.SEGMENT_WRITE_KEY_PROPERTY;
 
 
 /**
@@ -13,10 +16,9 @@ import com.segment.resource.Endpoints;
  * @author Jaymin Desai
  */
 public class App {
-    private static final String SEGMENT_WRITE_KEY = "<YOUR-SEGMENT-WRITE-KEY>";
 
     public static void main(String[] args) throws InterruptedException {
-        SegmentTracker.initialize(SEGMENT_WRITE_KEY);
+        SegmentTracker.initialize(PropUtils.getProperty(SEGMENT_WRITE_KEY_PROPERTY));
 
         // Make 5 calls per customer to different endpoints. You should only see events from
         // customer-2 and customer-3 on your segment dashboard since only the new feature endpoint

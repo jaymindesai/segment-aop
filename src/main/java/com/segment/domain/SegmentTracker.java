@@ -5,6 +5,7 @@ import java.util.Collections;
 import com.segment.domain.model.Context;
 import com.segment.analytics.Analytics;
 import com.segment.analytics.messages.TrackMessage;
+import com.sun.javafx.fxml.PropertyNotFoundException;
 
 
 /**
@@ -17,6 +18,8 @@ public class SegmentTracker {
 
     public static void initialize(String writeKey) {
         if (segmentClient == null) {
+            if (writeKey == null || writeKey.length() == 0)
+                throw new RuntimeException("Segment write key not found!");
             segmentClient = Analytics.builder(writeKey).flushQueueSize(1).build();
         }
     }

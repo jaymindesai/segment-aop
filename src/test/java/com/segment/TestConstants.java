@@ -1,5 +1,8 @@
 package com.segment;
 
+/**
+ * @author Jaymin Desai
+ */
 public class TestConstants {
     public static final int SEGMENT_QUEUE_SIZE = 1;
     public static final String SEGMENT_WRITE_KEY = "some-write-key";

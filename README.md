@@ -8,7 +8,7 @@ Imagine that there is a new feature being introduced to the existing product and
 
 ### Application
 
-To run this app end-to-end, you need to have an account on Segment Analytics. Once you have that, replace this [placeholder](src/main/java/com/segment/App.java#L16) with your Segment write key and run the gradle task as follows. You'll be able to see the events being triggered on the Segment dashboard. 
+To run this app end-to-end, you need to have an account on Segment Analytics. Once you have that, set an environment variable `SEGMENT_WRITE_KEY` with value as your Segment write key and run the gradle task as follows. You should be able to see the events triggered on your Segment dashboard. 
 
 For UNIX
 ```shell
