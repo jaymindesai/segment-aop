@@ -4,7 +4,7 @@ This is a template project to demonstrate annotation based AOP using vanilla Asp
 
 ## Basic Idea
 
-Imagine that there is a new feature being introduced to the existing product and we want to the analyze response of our customers. The new feature, in this case is exposed as a [REST endpoint](src/main/java/com/segment/resource/Endpoints.java#L14-L23) and we want to track activity of customers calling this endpoint. We have different types of customers [Basic, Advanced, Premium] and want to know which customer segment is more responsive to this newly introduced feature. We will use [Segment](https://segment.com/) to achieve this. Segment is a platform that collects user events from mobile and web applications to analyze customer behavior.
+Imagine that there is a new feature being introduced to the existing product and we want to analyze the response of our customers. The new feature, in this case is exposed as a [REST endpoint](src/main/java/com/segment/resource/Endpoints.java#L14-L23) and we want to track activity of customers calling this endpoint. We have different types of customers [Basic, Advanced, Premium] and want to know which customer segment is more responsive to this newly introduced feature. We will use [Segment](https://segment.com/) to achieve this. Segment is a platform that collects user events from mobile and web applications to analyze customer behavior.
 
 ### Application
 
