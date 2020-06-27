@@ -1,6 +1,6 @@
 # Segment AOP
 
-This is a minimalistic template project to demonstrate annotation based AOP using vanilla AspectJ. It uses AspectJ runtime to weave the aspects in a post-compile fashion and doesn't require Spring or any other fat Java library.
+This template project is an attempt to demonstrate annotation based AOP in a minimalist way using vanilla AspectJ. It uses AspectJ runtime to weave the aspects in a post-compile fashion and doesn't require Spring or any other fat Java library.
 
 ## Basic Idea
 
